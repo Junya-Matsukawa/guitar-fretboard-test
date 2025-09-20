@@ -1,0 +1,84 @@
+h1 {
+    text-align: center; /* 中央揃え */
+    color: #444; /* 文字色 */
+    font-family: 'Arial', sans-serif; /* フォントの変更 */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* 全体のコンテナ */
+.fretboard {
+    display: flex;             /* Flexboxを適用 */
+    flex-direction: column;    /* 子要素（.string）を縦に並べる */
+    align-items: center;       /* 横方向の中央に配置 */
+    gap: 15px;                 /* 各弦の間隔を空ける */
+}
+
+/* 各弦のコンテナ */
+.string {
+    display: flex;             /* Flexboxを適用 */
+    flex-direction: row;       /* 子要素（.note-button）を横に並べる */
+    justify-content: center;   /* 横方向の中央に配置 */
+    gap: 20px;                 /* 各ボタンの間隔を空ける */
+}
+
+/* ボタンの基本スタイル */
+.note-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* リセットボタンのスタイル */
+.reset-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f44336; /* 赤色 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .reset-button:hover {
+    background-color: #d32f2f; /* ホバーで少し暗くする */
+  }
+
+/* 1つ目の色 */
+.note-button.active-1 {
+    background-color: #00aaff;
+    box-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff;
+}
+/* 2つ目の色 */
+.note-button.active-2 {
+    background-color: #ff9900;
+    box-shadow: 0 0 10px #ff9900, 0 0 20px #ff9900;
+}
+/* 3つ目の色 */
+.note-button.active-3 {
+    background-color: #00ff66;
+    box-shadow: 0 0 10px #00ff66, 0 0 20px #00ff66;
+}
+/* 4つ目の色 */
+.note-button.active-4 {
+    background-color: #ff50dd;
+    box-shadow: 0 0 10px #ff50dd, 0 0 20px #ff50dd;
+}
+/* 5つ目の色 */
+.note-button.active-5 {
+    background-color: #e7e713f4;
+    box-shadow: 0 0 10px #e7e713f4, 0 0 20px #e7e713f4;
+}
+/* 6つ目の色 */
+.note-button.active-6 {
+    background-color: #9000ffd2;
+    box-shadow: 0 0 10px #9000ffd2, 0 0 20px #9000ffd2;
+}
+
